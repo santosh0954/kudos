@@ -1,0 +1,13 @@
+node_modules/
+public/
+
+#any text file ignore
+
+*.txt
+
+# any temp file
+
+*.temp
+
+*.zip
+*.rar
