@@ -14,6 +14,7 @@ const jsLiabrary = [
   "./node_modules/jquery/dist/jquery.min.js",
   "./node_modules/popper.js/dist/umd/popper.min.js",
   "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+  "./js/**/*.js",
 ];
 
 function move(from, to) {
@@ -52,7 +53,7 @@ function watcher() {
     },
   });
   watch("./scss/**/*.scss", style);
-  watch("./js/**/*.js", js);
+  watch("./js/**/*.js").on("change", series(js, browserSync.reload));
   watch("./src/*.html").on("change", browserSync.reload);
 }
 
@@ -76,6 +77,4 @@ exports.setup = setup;
 exports.style = style;
 exports.js = js;
 exports.build = build;
-exports.default = function () {
-  return parallel(style, js, watcher);
-};
+exports.default = parallel(setup, style, js, watcher);
