@@ -9,6 +9,7 @@ const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
 const fs = require("fs");
 const purge = require("gulp-purgecss");
+const rename = require("gulp-rename");
 
 const jsLiabrary = [
   "./node_modules/jquery/dist/jquery.min.js",
@@ -23,6 +24,17 @@ function move(from, to) {
 
 function setup() {
   console.log("Setup task running...");
+  move(
+    [
+      "./node_modules/jquery/dist/jquery.min.js",
+      "./node_modules/popper.js/dist/umd/popper.min.js",
+      "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+    ],
+    "./src/js/"
+  );
+  src("./node_modules/animate.css/animate.min.css")
+    .pipe(rename("_animate.scss"))
+    .pipe(dest("./scss/module/"));
   return move("./node_modules/font-awesome/fonts/**/**", "./src/fonts/");
 }
 function style() {

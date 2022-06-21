@@ -1,25 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project starter website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h1>Project starter...</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kudos Media || All digital solution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent mb-5">
+      <div class="container-fluid container-lg">
+        <a class="navbar-brand" href="#">K<span class="text-danger">udos</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+          aria-bs-controls="mainMenu" aria-bs-expanded="false" aria-bs-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">About us</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-bs-haspopup="true" aria-bs-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Digital Marketing</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Web Development</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Graphic Designing</a>
+              </div>
+            </li>
+            <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+            <a class="nav-link" aria-current="page" href="#">Contact us</a>
+          </div>
+        </div>
+        <div class="navbar-nav d-none d-lg-inline-flex">
+          <a class="nav-link" aria-current="page" href="#">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a class="nav-link" aria-current="page" href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="nav-link" aria-current="page" href="#">
+            <i class="fa fa-phone"></i>
+            <span>+1-202-555-0125</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-md-6 p-lg-5 order-1 order-md-0">
+          <h3 class="display-4 text-white">
+            Enjoy hassle free Digital Marketing Services
+          </h3>
+          <a href="#" class="btn btn-lg my-4 mt-lg-5 text-white btn-danger rounded-0">View Company Portfolio</a>
+        </div>
+        <div class="col-md-6 p-lg-4 text-end order-0 order-md-1">
+          <img src="./img/header.svg" alt="Hero section image" class="header-img" />
+        </div>
       </div>
     </div>
+  </header>
+  <main class="my-5">
+    <section class="section-1">
+      <div class="container">
+        <h2 class="text-center text-danger">
+          Services We Provide
+        </h2>
+        <p class=" text-muted text-center mb-5 fs-5">We makes the following things happen</p>
+        <div class="row py-4">
+          <div class="col-md-4 text-center">
+            <i class="fa fa-bullhorn mb-3 fa-4x text-warning" aria-hidden="true"></i>
+            <h4 class="text-center ">
+              Digital Marketing
+            </h4>
+            <p class="text-muted">
+              We are a digital marketing company that offers a wide range of
+              digital marketing services.
+            </p>
 
-    <script src="./js/main.js"></script>
-  </body>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fa fa-desktop mb-3 fa-4x text-warning" aria-hidden="true"></i>
+            <h4 class="text-center ">
+              Web Development
+            </h4>
+            <p class="text-muted">
+              We are providing Website and Android / IOS Application Development Services for your business.
+            </p>
+
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fa fa-paint-brush mb-3 fa-4x text-warning" aria-hidden="true"></i>
+            <h4 class="text-center ">
+              Graphic Designing
+            </h4>
+            <p class="text-muted">
+              We have the creativity to shape your ideas into images to raise your business up to a big brand.
+            </p>
+
+          </div>
+        </section>
+          <div class="container-fluid container-md mt-5 text-center">
+            <h2 class=" text-danger">Our Team</h2>
+            <p class=" text-muted text-center mb-5 fs-5">We have fantastic team.</p>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body p-0"><img
+                      src="https://bootstrapious.com/i/snippets/sn-cards/profile-1_dewapk.jpg" alt=""
+                      class="w-100 card-img-top">
+                    <div class="p-4">
+                      <h5 class="mb-0">Mark Rockwell</h5>
+                      <p class="small text-muted">CEO - Consultant</p>
+                      <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body p-0"><img
+                      src="https://bootstrapious.com/i/snippets/sn-cards/profile-1_dewapk.jpg" alt=""
+                      class="w-100 card-img-top">
+                    <div class="p-4">
+                      <h5 class="mb-0">Mark Rockwell</h5>
+                      <p class="small text-muted">CEO - Consultant</p>
+                      <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body p-0">
+                    <img src="https://bootstrapious.com/i/snippets/sn-cards/profile-2_ujssbj.jpg" alt=""
+                      class="w-100 card-img-top">
+                    <div class="p-4">
+                      <h5 class="mb-0">Mark Rockwell</h5>
+                      <p class="small text-muted">CEO - Consultant</p>
+                      <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body p-0">
+                    <img src="https://bootstrapious.com/i/snippets/sn-cards/profile-2_ujssbj.jpg" alt=""
+                      class="w-100 card-img-top">
+                    <div class="p-4">
+                      <h5 class="mb-0">Mark Rockwell</h5>
+                      <p class="small text-muted">CEO - Consultant</p>
+                      <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i
+                              class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+  </main>
+
+  <section class="bg-danger text-white text-center p-4 fs-3">
+    Call us for any questions <a href="tel:+1-800-555-5555" class=" ms-3 btn btn-lg btn-light rounded-0">Connect us</a>
+  </section>
+  <footer class="bg-dark text-white p-4 text-center">
+    <div class="container-fluid container-lg  ">
+      Design by <i class="fa fa-heart text-danger" aria-hidden="true"></i> Santosh Jha
+    </div>
+    <hr>
+    <a href="#" class="btn text-white">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+
+    </a>|
+    <a href="mailto:abc@gmail.com" class="btn text-white">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+
+    </a>|
+    <a href="#" class="btn text-white">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+
+    </a>|
+    <a href="tel:123456" class="btn text-white">
+      <i class="fa fa-phone" aria-hidden="true"></i> +91-9888888888
+
+    </a>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

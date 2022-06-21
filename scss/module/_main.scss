@@ -1,0 +1,16 @@
+.section-1 {
+  h2 {
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  //   &::after {
+  //     content: '';
+  //     display: block;
+  //     width: 20%;
+  //     position: absolute;
+  //     border-bottom: 4px double $danger;
+  //     transform: translateX(-50%);
+  //     left: 50%;
+  //     margin-top: 10px;
+  //   }
+  }
+}
