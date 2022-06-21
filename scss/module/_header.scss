@@ -21,6 +21,31 @@
       &:hover, &.active {
         color: $warning;
       }
+
+    }
+    .dropdown {
+      color: white;
+
+    }
+    .dropdown-menu {
+      border-radius: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.2 ease-in-out;
+      animation: slideIn 0.4s ease-in  !important;
+      // animation-name: slideIn;
+      // animation-duration: 0.7s;
+      // animation-timing-function: ease;
+      .dropdown-item {
+
+        transition: all 0.3 ease-in-out;
+        color: $danger;
+        &:hover {
+          background-color: $danger;
+          color: $white;
+        }
+      }
+    }
+
     }
   }
     .header-img {
@@ -30,4 +55,3 @@
       object-fit: cover;
     }
   
-}

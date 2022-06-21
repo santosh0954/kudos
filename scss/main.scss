@@ -1,5 +1,18 @@
 $danger : #FF5722;
-
+$primary: #7A75ED;
+$success: #42E091;
+$info: #60AADC;
+$warning: #DDA440;
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @import '../node_modules/bootstrap/scss/bootstrap.scss'; 
 @import '../node_modules/font-awesome/scss/font-awesome.scss';
 @import './module/header', "./module/main";
