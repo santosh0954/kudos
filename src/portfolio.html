@@ -65,13 +65,13 @@
                   >
                 </div>
               </li>
-              <a class="nav-link" aria-current="page" href="./portfolio.html"
-                >Portfolio</a
-              >
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="./contact.html"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+              <a class="nav-link" aria-current="page" href="./contact.html"
                 >Contact us</a
               >
             </div>
@@ -98,51 +98,19 @@
         <!-- sorting and searching header section  -->
         <div class="row mb-5">
           <div class="col-lg-8 col-sm-6 mb-3 text-center text-sm-start">
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic radio toggle button group"
-            >
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio1"
-                autocomplete="off"
-                checked
-              />
-              <label class="btn btn-outline-dark" for="btnradio1">All</label>
-
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio2"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-dark" for="btnradio2"
-                >Graphics</label
-              >
-
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio3"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-dark" for="btnradio3">Videos</label>
-
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio4"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-dark" for="btnradio4"
-                >Websites</label
-              >
+            <div class="btn-group filter" role="group">
+              <button class="btn btn-outline-dark active" data-filter="all">
+                All
+              </button>
+              <button class="btn btn-outline-dark" data-filter="graphic">
+                Graphic
+              </button>
+              <button class="btn btn-outline-dark" data-filter="videos">
+                Videos
+              </button>
+              <button class="btn btn-outline-dark" data-filter="website">
+                Websites
+              </button>
             </div>
           </div>
           <!-- search bar  -->
@@ -151,6 +119,7 @@
               <input
                 type="text"
                 class="form-control border-0"
+                id="searchbar"
                 placeholder="search project..."
               />
               <button class="btn btn-light">
@@ -160,8 +129,8 @@
           </div>
         </div>
         <!-- thumbnail section  -->
-        <section class="row">
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+        <section class="row portfolio-images" style="min-height: 300px">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 graphic">
             <img
               src="./img/portfolio/photos/1fireworks.jpg"
               alt="image one"
@@ -172,16 +141,16 @@
               #Social media
             </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 website">
             <img
               src="./img/portfolio/photos/pexels-photo-56904.jpeg"
               alt="image one"
               class="img-fluid img-thumbnail"
             />
-            <span class="badge bg-secondary mt-3">#Web</span>
+            <span class="badge bg-secondary mt-3">#website</span>
             <span class="badge bg-light text-dark border mt-3"> #School </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 videos">
             <img
               src="./img/portfolio/photos/pexels-photo-54284.jpeg"
               alt="image one"
@@ -190,18 +159,18 @@
             <span class="badge bg-primary mt-3">#Video</span>
             <span class="badge bg-light text-dark border mt-3"> #Vlog </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 website">
             <img
               src="./img/portfolio/photos/pexels-photo-249597.jpeg"
               alt="image one"
               class="img-fluid img-thumbnail"
             />
-            <span class="badge bg-secondary mt-3">#Web</span>
+            <span class="badge bg-secondary mt-3">#website</span>
             <span class="badge bg-light text-dark border mt-3">
               #Hospital
             </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 graphic">
             <img
               src="./img/portfolio/photos/pexels-photo-164853.jpeg"
               alt="image one"
@@ -212,7 +181,7 @@
               #Social media
             </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 graphic">
             <img
               src="./img/portfolio/photos/1fireworks.jpg"
               alt="image one"
@@ -223,16 +192,16 @@
               #Social media
             </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 website">
             <img
               src="./img/portfolio/photos/pexels-photo-56904.jpeg"
               alt="image one"
               class="img-fluid img-thumbnail"
             />
-            <span class="badge bg-secondary mt-3">#Web</span>
+            <span class="badge bg-secondary mt-3">#website</span>
             <span class="badge bg-light text-dark border mt-3"> #SEO </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 website">
             <img
               src="./img/portfolio/photos/pexels-photo-54284.jpeg"
               alt="image one"
@@ -241,18 +210,18 @@
             <span class="badge bg-primary mt-3">#Video</span>
             <span class="badge bg-light text-dark border mt-3"> #Vlog </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 website">
             <img
               src="./img/portfolio/photos/pexels-photo-249597.jpeg"
               alt="image one"
               class="img-fluid img-thumbnail"
             />
-            <span class="badge bg-secondary mt-3">#Web</span>
+            <span class="badge bg-secondary mt-3">#website</span>
             <span class="badge bg-light text-dark border mt-3">
               #Resturant
             </span>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4 graphic">
             <img
               src="./img/portfolio/photos/pexels-photo-164853.jpeg"
               alt="image one"

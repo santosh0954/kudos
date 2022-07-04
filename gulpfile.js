@@ -77,10 +77,14 @@ function build() {
   src("./src/**/*.css", { allowEmpty: true })
     .pipe(purge({ content: ["src/**/*.{html,js}"] }))
     .pipe(dest("./public/"));
+  move("./src/fonts/**/*", "./public/fonts");
+  // move("./src/css/**/*", "./public/css");
 
-  return src("./src/**/*.{html,js,jpeg,jpg,png,gif,svg}", { allowEmpty: true })
+  return src("./src/**/*.{html,js,jpeg,jpg,png,gif,svg,webp}", {
+    allowEmpty: true,
+  })
     .pipe(dest("./public/"))
-    .pipe(src("./public/", { allowEmpty: true }))
+    .pipe(src("./public/**/*", { allowEmpty: true }))
     .pipe(zip("public.zip"))
     .pipe(dest("./"));
 }
